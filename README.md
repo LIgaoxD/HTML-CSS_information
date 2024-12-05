@@ -1,6 +1,6 @@
 # HTML-CSS_information
 
-# Python的学习路程_爬虫📌
+# 前端的学习路程（html、css、js）📌
 
 #### 1、Python的学习课程PPT（叶品菊老师的推荐）。
 
