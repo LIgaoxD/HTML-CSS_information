@@ -1,8 +1,8 @@
-# HTML-CSS_information
+# HTML_CSS_information
 
 # 前端的学习路程（html、css、js）📌
 
-#### 1、Python的学习课程PPT（叶品菊老师的推荐）。
+#### 1、HTML文档里面包含了html、css、html5的内容（叶品菊老师的授课,也很感谢!）。
 
 #### 2、Python二级，自己考二级时复习用的。
 
