@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			div{
+				width: 50px;
+				height: 50px;
+				background: red;
+				/* 调用动画 */
+				animation: move1 6s ease infinite;
+			}
+			/* 创建动画*/
+			@keyframes move1{
+				0%{
+					background: red;
+				}
+				25%{
+					background: yellow;
+					transform: translate(200px,0);
+				}
+				50%{
+					background: lightcyan;
+					transform: translate(200px,200px);
+				}
+				75%{
+					background: greenyellow;
+					transform: translate(0px,200px);
+				}
+				100%{
+					background:mistyrose;
+					transform: translate(0,0);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

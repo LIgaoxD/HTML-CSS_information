@@ -1,0 +1,65 @@
+
+		body{
+			width: 1100px;
+			height: 1200px;
+			background-image: url('images/bg.gif');
+			background-position: center;
+			background-repeat: repeat-y;
+			color: #8f8f8f;
+			/* border: 1px solid red; */
+			
+		}
+		nav{
+			
+			width: 350px;
+			height: 600px;
+			float: left;
+			margin-left: 234px;
+			/* border: 1px solid red; */
+			
+		}
+		nav p{
+			font-family: 'Joefrey Mahusay';
+			font-size: 43px;
+			color: #a08783;;
+			text-shadow: 0 1px white;
+			
+		}
+		@font-face{
+			font-family:'Joefrey Mahusay';
+			src: url('fonts/League_Gothic-webfont.ttf');
+		}
+		section{
+			width: 798px;
+			height: 899px;
+			margin-left: 555px;
+			/* border: 1px solid red; */
+			
+		}
+		.recent-work{
+			display: block;
+			float: left;
+			padding-bottom: 6px;
+			/* border: 1px solid red; */
+		}
+		
+		.two-column{
+			float: left;
+			padding-right: 6px ;
+			border: 1px solid  #d6d6d6;
+			margin-right: 24px;
+			/* border: 1px solid red; */
+		}
+		
+		.my-services{
+			
+			float: left;
+			/* border: 1px solid red; */
+		}
+		
+		.three-column{
+			float: left;
+			width: 220px;
+			margin-right: 10px;
+			/* border: 1px solid  red; */
+		}	

@@ -1,0 +1,130 @@
+body{
+	margin: 0;
+	padding: 0;
+	background:#f7f7f7 ; 
+}
+header{
+	width: 1200px;
+	margin: auto;
+	text-align: center;
+}
+
+.title{
+	margin: auto;
+	color: white;
+	background: rgba(133, 203, 190, 0.5);
+	width: 200px;
+	height: 60px;
+	text-align: center;
+	line-height:60px;
+	font-size: 24px;
+	font-family: "宋体";
+	font-weight: bolder;
+	border-radius: 60px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border: 5px solid white;
+	
+}
+.title:hover{
+	box-shadow: 0px 0px 10px #aaa;
+}
+.items{
+	margin: auto;
+	width: 880px;
+	height: 440px;
+	border: 1px solid #ccc;
+}
+.item{
+	height: 200px;
+	width: 200px;
+	float: left;
+	/* display: inline-block;  一排显示 */
+	margin: 10px;
+	overflow: hidden;
+	/* 参照物 */
+	position: relative;
+}
+
+/* 简介信息 */
+.desc{
+	width: 200px;
+	height: 100px;
+	background: rgba(0, 0, 0,0.4);
+	transform: translate(0,-160px) rotate(55deg);
+	text-align: center;
+	color: white;
+	/* 高度0 隐藏 */
+	height: 0;
+	overflow: hidden;
+	/* 过渡 */
+	transition: all 0.5s ease;
+}
+.desc h3{
+	border-bottom: 2px solid green;
+	padding-bottom: 10px;
+}
+.item:hover .desc{
+	transform: translateY(-160px) rotate(0deg);
+	height: 120px;
+}	
+.intro{
+	font-size: 18px;
+	/* 首行缩进 */
+	text-indent: 2em;
+	color: white;
+	margin: auto;
+	background: #aae6da;
+	width: 880px;
+	font-family: "宋体";
+	line-height: 30px;
+	
+}
+
+.p1{
+	font-size: 36px;
+	font-family: "宋体";
+	color: #aae6da;
+	text-align: center;
+}
+.p2{
+	text-align: center;
+	font-size: 24px;
+	font-family: "隶书";
+}
+/* 移入透明块遮罩效果 */
+.item:before{
+	content: "cc";
+	width: 360px;
+	height: 360px;
+	background: rgba(133, 203, 190, 0.5);
+	/* 定位到上面 */
+	position: absolute;
+	top: -240px;
+	right: 0;
+	/* 右上角为中心点旋转 */
+	transform: rotate(55deg) translateX(60px);
+	transform-origin: right top;
+	transition: all 0.5s ease 0.3s;
+	
+}
+/* 移入效果 */
+.item:hover:before{
+	top:0;
+}
+.item:after{
+	content: "cc";
+	width: 360px;
+	height: 360px;
+	background: rgba(133, 203, 190, 0.5);
+	position: absolute;
+	bottom: -240px;
+	left: 0;
+	/* 左下角为中心点旋转 */
+	transform: rotate(55deg) translateX(-60px);
+	transform-origin: left bottom;
+	transition: all 0.5s ease 0.3s;
+}
+.item:hover:after{
+	bottom:0;
+}

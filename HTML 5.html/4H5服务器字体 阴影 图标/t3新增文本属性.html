@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+	<!-- 	=======》》》》background-position CSS 属性为每一个背景图片设置初始位置。
+		这个位置是相对于由 background-origin （background-origin 
+		规定了指定背景图片background-image 属性的原点位置的背景相对区域。）定义的位置图层的。
+		
+		=======》》》》{margin: 0; padding: 0}作用是Reset（重置）浏览器默认样式。
+		{margin:0; padding:0;}代表了网页中所有元素，包括body ,ul, li列表标签 ,p,H标题标签,dd,dt 等
+		都有默认的margin 或padding值的，加上这句就可以删除浏览器这些默认值，方面后面的设置。
+		
+		=======》》》》nowrap 强制在同一行内显示所有文本，直到文本结束或者遭遇br标签对象才换行。
+		使用white-space:nowrap强制不换行。
+		
+		=======》》》》overflow:hidden最直白的作用就是当元素内的内容溢出的时候使它隐藏溢出的部分。
+		
+		=======》》》》text-overflow 属性规定当文本溢出包含元素时发生的事情。
+		ellipsis 表示显示省略符号来代表被修剪的文本表示。
+		
+		=======》》》》word-wrap属性允许长的内容可以自动换行。
+		 -->
+		 
+		<style>
+		dl{
+			width:240px;
+			border: solid 1px #ccc;
+			
+		}
+		dt{
+			
+			padding: 8px 8px;
+			background: #7fecad url('字体 图片/green.gif') repeat-x;
+			font-size: 13px;
+			font-weight:bold;
+			text-align:left;
+			color: #71790c;
+			margin-bottom: 12px;
+			border-bottom: solid 1px #efefef;
+		}
+		
+		dd{
+			
+			font-size: 12px;
+			 /* border: 1px solid red; */
+			 margin: 0;
+			 background: url('字体 图片/icon.gif')  no-repeat;
+			 background-position: left 25% ;
+			 padding: 2px 2px 2px 18px;  /* 上右下左 */
+			 white-space: nowrap;  /* 显示一行 */
+			 overflow:hidden;  /* 溢出隐藏 */
+			 text-overflow: ellipsis;
+		}	
+		</style>
+	</head>
+	<body>
+		<dl>
+			<dt>收藏新闻</dt>
+			<dd>沟里波澜拥又推，乱成堆，一半儿春愁一半儿水。</dd>
+			<dd>忧伤落满山岗，等青春散场，繁华迟早都要褪尽，绚烂终归敛于平淡。</dd>
+			<dd>芒鞋破钵无人识，踏过樱花第几桥。</dd>
+			<dd>春衫酒痕污，再一盅敬殊途。这一生，春秋寒暑才几步。</dd>	
+		
+		</dl>
+	</body>
+</html>
+

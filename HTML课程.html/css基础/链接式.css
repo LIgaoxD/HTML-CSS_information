@@ -1,0 +1,13 @@
+div{
+	width: 100px;height: 100px;
+	color: blueviolet;
+	background-color: red;
+}
+/* 链接式 */
+
+p{
+	
+	color:blueviolet;
+	font-style: italic;
+}
+/* 导入样式 */

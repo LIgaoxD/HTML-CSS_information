@@ -1,0 +1,43 @@
+h4{
+	font-weight: bold;
+	font-family: "黑体";
+}
+.cate{
+	width: 400px;
+	height: 280px;
+	background: #eee;
+	border-top: 3px solid rgb(69,114,155);
+	padding: 10px;
+}
+.catep{
+	font-weight: bold;
+}
+.choice{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.choice li{
+	width:50px;
+	float: left;
+	margin: 5px;
+
+}
+.choice a:link,.choice a:visited{
+	color: black;
+}
+.choice a:hover{
+	background: green;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+.list{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.footer{
+	height: 100px;
+	text-align: center;
+	background-color: #eee;
+}

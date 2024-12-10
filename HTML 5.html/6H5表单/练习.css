@@ -1,0 +1,79 @@
+body{
+		background: url("images/tree.jpg") no-repeat;
+		background-position:180px 340px;
+	}
+	/* 表单 */
+.regfrom{
+		width: 70%;
+		margin: 0;
+		padding: 0;
+		/* border: 1px solid red; */
+		position: absolute;
+		left: 35%;
+		top: 15%;
+	}
+.regfrom ul{
+	margin: 0;
+	padding: 0;
+	width: 750px;
+	list-style: none;
+	
+}
+ .regfrom li{
+	border-bottom: 1px solid #eee;
+	padding-bottom: 12px;
+}
+ .regfrom span{
+	display: inline-block;  	/* span内联元素变为块级元素*/
+	width: 150px; 
+	margin-top: 10px;
+}
+#first,#last{
+	/* border-top: 1px solid #777; */
+	border-bottom:1px solid #777;
+}
+.btn{
+	color: white;
+	background-color: green;
+	font-weight: bold;
+	font-size: 12px;
+	border-radius: 3px;
+	padding: 6px 20px;
+	border: none;
+	margin-top: 8px;
+	margin-left: 160px;
+}
+.btn:hover{
+	opacity:  0.85; 		/* 透明度 */
+	cursor: pointer;		/* 手型 */
+}
+/* 文本框 文本区域 */
+.normal input ,.normal textarea{
+	background: url("images/attention.png") no-repeat 98% center;
+	border: 1px solid #aaa;
+	box-shadow: 0 0 3px #aaa ,0 10px 15px #ccc inset;
+	border-radius: 2px;
+}
+/* 文本框获得焦点  :focus */
+.normal input:focus,.normal textarea:focus{
+	background: white;
+	border: 1px solid #555;
+	box-shadow: 0 0 3px #aaa;
+	/* width: 300px; */
+	padding-right: 80px;
+}
+*:focus{
+	outline: none;      /* 去掉原来的轮廓 */
+}
+/* 无效内容  invalid*/
+.normal input:focus:invalid,.normal textarea:focus:invalid{
+	background: url("images/warn.png") no-repeat 98% center;
+	border: 1px solid #b03535;
+	box-shadow: 0 0 5px #d45352;
+}
+/* 有效内容 valid*/
+.normal input:focus:valid,.normal textarea:focus:valid{
+	background: url("images/right.png") no-repeat 98% center;
+	border: 1px solid #28921f;
+	box-shadow: 0 0 5px #5cd053;
+}

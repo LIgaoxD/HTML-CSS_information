@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+		
+			#div1{
+				width: 200px;
+				height: 200px;
+				border: 2px solid red;
+				background:gray;
+				color: orange;
+		
+			}
+			
+		</style>
+	</head>
+	<body>
+	
+		<div id="div1">母亲节（Mother's Day），是一个感谢母亲的节日。
+		母亲们在这一天通常会收到礼物，康乃馨被视为献给母亲的花，而中国的母亲花是萱草花，又叫忘忧草。
+		</div>
+		
+		<script type="text/javascript">
+			//1.获取元素 
+			var oDiv=document.getElementById("div1")
+			//2.加事件
+			div1.onmouseover=function(){
+				//3.发生的事件 div块出现
+				oDiv.style.display='block';
+				// 4.背景 颜色
+				oDiv.style.background='black';
+				oDiv.style.color='cadetblue';
+			}
+			// 鼠标移出
+			div1.onmouseout=function(){
+				//div出现
+				oDiv.style.display='block';
+				oDiv.style.width='200px';
+				oDiv.style.height='200px';
+				oDiv.style.border='2px solid red';
+				oDiv.style.background='gray';
+				oDiv.style.color='orange';
+				
+			}
+		</script>
+	</body>
+</html>

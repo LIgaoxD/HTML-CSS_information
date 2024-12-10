@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html><strong></strong>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 200px;
+				height: 50px;
+				border: 1px solid orange;
+				background: #ffffcc;
+				color: orange;
+				display: none; /* 隐藏 */
+				
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!-- 结构 -->
+		<label id="btn">
+		<input type="checkbox" name="" value="" id="btn"/>一周内免登陆
+		</label>
+		<div id="div1">请不要在网吧使用此功能~</div>
+		<!-- 动态 -->
+		<script type="text/javascript">
+			//1.获取元素 复选框和div
+			var oBtn=document.getElementById("btn")
+			var oDiv=document.getElementById("div1")
+			//2.加事件
+			oBtn.onmouseover=function(){
+				//3.发生的事件 div块出现
+				oDiv.style.display='block';
+				
+			}
+			// 鼠标移出
+			oBtn.onmouseout=function(){
+				//div隐藏
+				oDiv.style.display='none';
+				
+			}
+		</script>
+	</body>
+</html>

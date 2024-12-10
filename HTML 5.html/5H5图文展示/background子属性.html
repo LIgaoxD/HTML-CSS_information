@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#div1{
+				width: 200px;
+				height: 200px;
+				border: 20px solid rgba(0,0,0,0.2);
+				background: url("images/lufei.jpg") no-repeat;
+				/* 文字与边框间的距离 */
+				padding:10px;
+				/* 图片开始绘制位置 */
+				background-origin: border-box;	/* 边框 */
+				background-origin: content-box;	/* 内容 */
+			}
+			#div2{
+				width: 250px;
+				height: 350px;
+				border: 5px solid rgba(0,0,0,0.2);
+				/* 改变图片的大小 */
+				background: url("images/0.png");
+				background-size: contain;
+			}
+			#div3{
+				width: 200px;
+				height: 200px;
+				border: 1px solid rgba(0,0,0,0.2);
+				background: url("images/b1.jpg");
+				background-size: 100% 100%;
+				border-radius:50% 50% 50% 0;
+			}
+			
+			img{
+				width: 200px;
+				height:200px;
+				transition: all 5s ease ;
+				/* transform-origin: right center; */
+			}
+			#div4{
+				width: 100px;
+				
+			}
+				
+			img:hover {
+				
+				transform:translate(400px) rotate(3600deg) ;
+			
+			}
+				
+			
+		</style>
+	</head>
+	<body>
+		<div id="div1">这里是北北的画画</div>
+		<div id="div2"></div>
+		<div id="div3"></div>
+		<div id="div4"><img src="images/fengche.png" alt=""></div>
+	</body>
+</html>

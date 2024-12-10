@@ -1,0 +1,99 @@
+
+/* 开始 */
+	.content{
+	width: 600px;
+	border-left: 1px solid #11a3ff;
+	border-right: 1px solid #11a3ff;
+	border-bottom: 1px solid #11a3ff ;
+	font: 12px arial;
+	padding: 15px;
+	}
+/* 菜单 */
+	#nav{
+	
+	list-style: none;  /* 去掉点 */
+	/* border: 1px solid red; */
+	width: 630px;
+	padding: 0px;
+	margin: 0px;
+	border-bottom:  1px solid #11a3ff;
+	font: bold 12px arial;
+	padding-bottom: 23px; /* 内边距 */
+	}
+/* 每个菜单项 */
+	#nav li{
+	/* 1.边框 2.横向 3.间距 */
+	border: 1px solid #11a3ff;
+	float: left;
+	margin-right: 3px;
+	background: #a3bdff;
+	height: 22px;
+		
+	}
+/* 菜单超链接 */
+	#nav li	a:link,#nav li a:visited {
+			
+			color: #006eb3;
+			text-decoration: none;
+		}
+	#nav li a:hover{
+			background: 006eb3;
+			color: white;
+				
+			}
+/* 超链接大小 */
+		#nav li a{
+			padding: 3px 10px;
+			display: block;			/* 块元素 */
+		
+		}
+		
+		
+		#list{
+			list-style: none;
+			text-align: left;
+			
+		}
+		#list li a:link,#list li a:visited {
+				
+				color: black;
+				text-decoration: none;
+			}
+		#list li a:hover{
+				background: 006eb3;
+				color: #a3bdff;
+			}
+			
+		span{
+				float: left;
+				color: aquamarine;
+				width: 165px;
+				margin-right: 15px;
+				
+			}
+			span a:link,span a:visited {
+					
+					color: #006eb3;
+					text-decoration: none;
+				}
+			span a:hover{
+					text-decoration: underline;
+					color: black;
+					}
+/* 首页活动菜单样式 */
+		#nav li.active{
+			background: white;
+			border-bottom: 1px solid white;
+		}
+/* 活动菜单超链接样式 */
+		#nav li.active a:link,#nav li.active a:visited {
+			color: black;
+			
+		}
+		#nav li.active a:hover{
+			color: #006eb3;
+			background: white;
+			text-decoration: underline;
+			
+		}
+		

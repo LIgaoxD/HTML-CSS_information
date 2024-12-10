@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.control progress {
+				width: 450px;
+				height: 32px;
+			}
+
+			/* input[type=image]{} */
+			.imgs {
+				width: 20px;
+				height: 20px;
+			}
+
+			div {
+				margin-top: 10px;
+			}
+
+			progress {
+				width: 400px;
+				background: #036;
+
+			}
+
+			progress::-webkit-progress-value {
+				background: red;
+			}
+
+			progress::-webkit-progress-bar {
+				background: #036;
+			}
+		</style>
+	</head>
+	<body>
+		<video width="500px" height="250px" controls="controls" id="myVideo" ontimeupdate="show()"
+			onloadeddata="show()">
+
+			<source src="video/myVideo.mp4" type="video/mp4">
+			<source src="video/myVideo.ogg" type="video/ogg">
+			<source src="video/myVideo.webm" type="video/webm">
+
+
+		</video>
+		<div class="control">
+			<progress min=0 max=100 value="" id="progress"></progress>
+		</div>
+		<div class="buttons">
+			<input type="image" src="img/video_rewind_64.png" name="" id="back" value="" title="后退" class="imgs">
+			<input type="image" src="img/video_play_64.png" name="" id="play" value="" title="播放" class="imgs">
+			<input type="image" src="img/video_forward_64.png" name="" id="go" value="" title="前进" class="imgs">
+			<input type="image" src="img/volume_down_64.png" name="" id="" value="" class="imgs" title="音量-"
+				disabled="disabled">
+			<input type="range" min="0" max="1" step="0.1" name="" id="vol" value="">
+			<input type="image" src="img/volume_up_64.png" name="" id="" value="" class="imgs" title="音量+"
+				disabled="disabled">
+		</div>
+		<script src="control2.js"></script>
+	</body>
+</html>

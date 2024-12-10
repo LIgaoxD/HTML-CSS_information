@@ -1,0 +1,122 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+		/* 参照物 */
+ul li{
+	position: relative;
+	/* 相对定位 */
+}
+.active
+{
+	position: relative;
+}
+body{
+	
+	background: #f4f4f4;
+	font: lighter 14px arial;
+	/* font-size: 14px;
+		font-family: Arial;
+		font-weight: lighter; */
+	/* lighter 为细体   Arial是一种通用的英文字体*/
+}
+.menu{
+	width: 250px;
+	background: white;
+	/* border: 1px solid #ccc; */
+	margin: 40px auto;		/* 上下边距为40  左右自适应 */
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);	 /* 阴影效果 */
+	border-radius: 5px; 	 /* 圆角 */
+
+	/* padding设置成auto它会自动继承浏览器的padding值，
+	因为有些奇葩浏览器是默认有padding值的，
+	为了避免这个对样式造成影响，样式开头一般会加上一句
+	{margin:0;padding:0}. */
+	
+	/* border-radius 允许你设置元素的外边框圆角。
+	当使用一个半径时确定一个圆形，当使用两个半径时确定一个椭圆。
+	这个（椭）圆与边框的交集形成圆角效果。 */
+	
+}
+.menu_header{
+	
+	color: white;
+	background: #4b4f55;
+	border: 1px solid black;
+	/* font-size: 14px; */
+	/* border-radius: 5px; */
+	border-radius: 5px 5px 0 0;
+}
+.menu_header h1{
+	
+	font-size: 14px;
+	padding: 15px;
+	
+}
+		/* 去掉点 */
+ul{
+	list-style: none;
+}
+
+ul a{
+	text-decoration: none; 	 /* 去下划线 */
+	color: #8b8e93;
+	border-bottom: 1px solid #f0f0f0;
+	/* 块级元素 display:block就是将元素显示为块级元素*/
+	display: block;
+	padding: 10px 15px;
+}
+		/* 划过li  样式a:hover */
+ul a:hover{
+	
+	background: #ccc;
+}
+		/* 活动菜单  li */
+.active a,.active a:hover{
+	
+	background: #6e757f;
+	color: white;
+	border-bottom: 1px solid black;
+}
+.num{
+	font-size: 12px;
+	border: 1px solid #d1d1d1;
+	border-radius: 10px;
+	padding: 2px 8px;
+	position: absolute;		/* 定位 */
+	top: 10px;
+	right: 15px;
+}
+#red{
+	background: red;
+	border: 1px solid red;
+}
+
+		/* 图标颜色 */
+.fa-envelope{
+	
+	color: aqua;
+}
+.fa-flag{
+	color: red;
+}
+.fa-space-shuttle{
+	
+	color: seagreen;
+}
+.fa-archive{
+	
+	color:orange;
+}
+
+/* 三角型箭头 */
+.active:after{
+	content: "";
+	border-left: 6px solid #6e757f;
+	border-top: 6px solid transparent; /* transparent全透明黑色 */
+	border-bottom: 6px solid transparent;
+	position: absolute;
+	right: -5px;     /* 定位到外面 */
+	top: 50%;
+	margin-top: -6px;   /* 上移 */
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="练习.css">
+		
+	</head>
+	<body>
+		<div id="first">
+			<form action="2表单练习.html" method="get" autocomplete="on" class="regfrom">
+				<ul>
+					<li>
+						<h2>用户注册</h2>
+					</li>
+					<li class="normal">
+						<span>用户名：</span>
+						<!-- 规定用户名的格式 -->
+						<input type="text" name="user" value="" required="required" pattern="[a-zA-Z]\w{4,11}" >
+					<!--正则 1. 字母数字下划线 5-12 [A-Za-z0-9]{5,12} -->
+						<!-- 2.字母开头其他位不限制 4-11 [a-zA-Z]\w{4,11} -->
+						<!-- 3.字母数字下划线 (?=.*ab)\w{5,14}$
+												(?!.*ab)\w{5,14}$ -->
+						
+					</li>
+					<li class="normal">
+						<span>密码：</span>
+						<input type="password" name="pwd" id=""required="required">
+					</li>
+					<li>
+						<span>性别：</span>
+						<input type="radio" name="sex" id="" value="man">男
+						<input type="radio" name="sex" id="" value="woman">女
+					</li>
+					<li class="normal">
+						<span>邮箱：</span>
+						<input type="email" name="email" id="" value="" placeholder="2331995767@qq.com">
+						<!-- placeholder 	设置提示语 -->
+					</li>
+					<li class="normal">
+						<span>年龄：</span>
+						<input type="number" name="age" id="" value="" class="img">
+					</li>
+					<li>
+						<span>个人爱好：</span>
+						<input type="checkbox" name="hobby" id="" value="唱歌">唱歌
+						<input type="checkbox" name="hobby" id="" value="跳舞">跳舞
+						<input type="checkbox" name="hobby" id="" value="弹钢琴">弹钢琴
+						<input type="checkbox" name="hobby" id="" value="蓝球">篮球
+						<input type="checkbox" name="hobby" id="" value="羽毛球">羽毛球
+					</li>
+					<li class="normal">
+						<span>个人简介：</span>
+						<textarea name="" id="" cols="40" rows="10" class="img"></textarea>
+					</li>
+					<li id="last">
+						<input type="submit" name="sub" id="" value="立即注册" class="btn">
+					</li>
+					
+				</ul>
+				
+			</form>
+		</div>
+	</body>
+</html>

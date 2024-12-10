@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		#zy{
+			width: 320px;
+			height: 180px;
+			border: 1px solid 3eee;
+			background: url('图片/work1.jpg');
+			box-shadow: 5px 5px 10px #ccc;    /* 水平 垂直 模糊 颜色 */
+			transition: all 0.6 ease-in-out;    /* 属性 时间 效果 */
+		}
+		#zy:hover{
+			background: url('图片/work2.png');
+				/* 内部阴影 */ 
+			box-shadow: inset 5px 5px 10px #f96;
+				/* border-radius: 20px 20px 40px 20px; */
+			border-radius: 50%;
+		}
+			
+		</style>
+	</head>
+	<body>
+		<div id="zy"></div>
+	</body>
+</html>

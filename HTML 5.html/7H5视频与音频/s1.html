@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			button {
+				background: purple;
+				font-size: 14px Arial;
+				color: white;
+				padding: 8px 28px;
+				border-radius: 8px;
+				box-shadow: 0 2px 0px rgba(0, 0, 0, 0.3);
+				cursor: pointer;
+				margin-left: 6px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 视频 -->
+		<!-- <video src="video/myVideo.ogg" controls="controls" autoplay="autoplay" loop="loop" ></video> -->
+		<!--显示控键 -->
+		<!-- 自动播放 -->
+		<!-- 重复播放-->
+		<video width="630px" height="" controls="controls" id="myVideo">
+
+			<source src="video/myVideo.mp4" type="video/mp4">
+			<source src="video/myVideo.ogg" type="video/ogg">
+			<source src="video/myVideo.webm" type="video/webm">
+
+		</video>
+		<br>
+		<button id="play">播放</button>
+		<button id="go">快进5秒</button>
+		<button id="back">快退5秒</button>
+		<button id="add">音量+</button>
+		<button id="cut">音量-</button>
+		<button id="stop">静音</button>
+		<!-- 引入js文件 -->
+		<script src="control1.js"></script>
+
+
+	</body>
+</html>

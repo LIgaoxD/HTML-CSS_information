@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>2D变换</title>
+		<style>
+			.test {
+				margin-bottom: 25px;
+				padding-bottom: 25px;
+			}
+
+			.test ul {
+				list-style: none;
+			}
+
+			.test li {
+				float: left;
+				width: 100px;
+				background: #CCC;
+				margin-left: 3px;
+				line-height: 30px;
+			}
+
+			.test a {
+				display: block;
+				text-align: center;
+				height: 30px;
+			}
+
+			.test a:link {
+				color: #666;
+				background: #CCC no-repeat 5px 12px;
+				text-decoration: none;
+			}
+
+			.test a:visited {
+				color: #666;
+				text-decoration: underline;
+			}
+
+			.test a:hover {
+				color: #FFF;
+				font-weight: bold;
+				text-decoration: none;
+				background: rgb(255, 133, 46);
+			}
+
+
+			/* 旋转 */
+			#rotate li:hover {
+				transform: rotate(45deg);
+				/* 顺时针45度 */
+				transition: 1s linear;
+				-webkit-transform: rotate(45deg);
+			}
+
+			/* 缩放 */
+			#scale li:hover {
+				transform: scale(1.2, 0.8);
+				/* 长 宽 */
+				transition: transform 1s ease;
+				-webkit-transform: scale(1.2, 0.8);
+			}
+
+			/* 平移 */
+			#translate li:hover {
+				transform: translate(-20px, 20px);
+				/* x轴 y轴 */
+				transition: 1s ease-in-out;
+			}
+
+			/* 倾斜 */
+			#skew li:hover {
+				transform: skew(30deg, 30deg);
+				/* x轴 y轴 */
+				transition: 1s ease-in-out;
+			}
+
+			/* 旋转 */
+			#rotate2 li:hover {
+				transform: rotate(60deg);
+				transform-origin: left top;
+				/* 定义中心点   左上角 */
+				transition: 1s linear;
+				-webkit-transform: rotate(45deg);
+			}
+
+			/* ========>>>>>>transition[ 过渡属性 过渡时间 过渡效果 过渡延迟时间 ]*/
+
+		 /* 过渡 */
+			#rotate li {
+				transition: transform 0.5s linear;
+				/* 匀速 */
+				/* transform 和 all 一样 */
+				-webkit-transition: transform 0.5 ease;
+			}
+
+			#scale li {
+				transition: transform 0.5s ease;
+				-webkit-transition: transform 0.5 ease;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div class="test" id="rotate">
+			<ul>
+				<li><a href="1">网站首页</a></li>
+				<li><a href="2">部门概况</a></li>
+				<li><a href="3">党建工会</a></li>
+				<li><a href="4">学团工作</a></li>
+				<li><a href="5">教学管理</a></li>
+				<li><a href="6">实训中心</a></li>
+			</ul>
+		</div>
+
+		<div class="test" id="scale">
+			<ul>
+				<li><a href="1">网站首页</a></li>
+				<li><a href="2">部门概况</a></li>
+				<li><a href="3">党建工会</a></li>
+				<li><a href="4">学团工作</a></li>
+				<li><a href="5">教学管理</a></li>
+				<li><a href="6">实训中心</a></li>
+			</ul>
+		</div>
+
+		<div class="test" id="translate">
+			<ul>
+				<li><a href="1">网站首页</a></li>
+				<li><a href="2">部门概况</a></li>
+				<li><a href="3">党建工会</a></li>
+				<li><a href="4">学团工作</a></li>
+				<li><a href="5">教学管理</a></li>
+				<li><a href="6">实训中心</a></li>
+			</ul>
+		</div>
+
+		<div class="test" id="skew">
+			<ul>
+				<li><a href="1">网站首页</a></li>
+				<li><a href="2">部门概况</a></li>
+				<li><a href="3">党建工会</a></li>
+				<li><a href="4">学团工作</a></li>
+				<li><a href="5">教学管理</a></li>
+				<li><a href="6">实训中心</a></li>
+			</ul>
+		</div>
+
+		<div class="test" id="rotate2">
+			<ul>
+				<li><a href="1">网站首页</a></li>
+				<li><a href="2">部门概况</a></li>
+				<li><a href="3">党建工会</a></li>
+				<li><a href="4">学团工作</a></li>
+				<li><a href="5">教学管理</a></li>
+				<li><a href="6">实训中心</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

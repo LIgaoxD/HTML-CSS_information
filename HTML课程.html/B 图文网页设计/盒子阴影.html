@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#zho{
+				width: 200px;
+				height: 200px;
+				border: 1px solid #eee;
+				background: url(lufei2.png);
+				/* 阴影 */
+				box-shadow: 5px 5px 10px #ccc;/* 水平 垂直 模糊 颜色 */
+				/* 变形 */
+				transition: all 0.2s ease-in-out;
+				/* 参数- 过度属性 时间 效果 */
+			}
+			/* 移入效果 */
+			#zho:hover{
+				background: url(lufei.jpg);
+				box-shadow: inset /* 内部阴影 */ 5px 5px 10px #f96;
+				/* border-radius: 20px 20px 40px 20px; */
+				border-radius: 50%;/* 圆形 */
+			}
+			#yu{
+				width: 200px;
+				height: 200px;
+				border: 1px solid honeydew;
+				background: url(max.png);
+				box-shadow: 6px 6px 8px aquamarine;
+				transition: all 0.6s ease-in-out;
+			}
+			#yu:hover{
+				
+				box-shadow: inset 8px 8px 12px lightseagreen;
+				border-radius: 50% 50% 50% 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="zho"></div>
+		<br><br>
+		<div id="yu"></div>
+	</body>
+</html>

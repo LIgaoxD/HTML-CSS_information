@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#div1{
+				background-color:red;
+				width: 66px;
+				height: 66px;
+				margin: 111px auto;
+				animation: Move 4s linear infinite ;
+			}
+			@keyframes Move{
+				0%{
+					
+				}
+				25%{
+					transform:translate(118px,0px) scale(0.8,1.2);
+					background: orange;
+				}
+				50%{
+					transform:translate(118px,118px) scale(1.2,0.8);
+					background: green;
+				}
+				75%{
+					transform: translate(0px,118px) scale(0.8,1.2);
+					background: cyan;
+				}
+				100%{
+					transform: translate(0px,0px) scale(1.2,0.8);
+					background: red;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1"></div>
+	</body>
+</html>

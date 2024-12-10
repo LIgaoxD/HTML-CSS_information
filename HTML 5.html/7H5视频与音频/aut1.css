@@ -1,0 +1,131 @@
+#player{
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	border-radius: 50%;
+	margin: 200px auto;
+	box-shadow: 2px 2px 20px rgba(0, 0, 0,0.3);
+	position: relative;
+	
+}
+
+img{
+	width: 300px;
+	height: 300px;
+	opacity: 0.75px;    /* 透明度 */
+	
+}
+button{
+	color: white;
+	border: 0px;
+	background: transparent;  	/* 背景透明 */
+	text-shadow: 1px 1px 2px black;   /* 文字阴影 */
+	/* 过渡 */
+	transition: all 0.3s ease-in-out;
+	margin: 5px;
+}	
+button:hover{
+	color: #26c5c8;
+	
+}
+.controls{
+	top:150px;
+	left:24px;
+	position: absolute;
+	text-align: center;
+}
+#vol{
+	width: 80px;
+	height:2px;
+	cursor: pointer;   /* 手的形状 */
+	margin: 15px auto;
+}
+	/* 过渡 */
+#vol::-webkit-slider-thumb{
+	transition: all 0.2s ease-in-out;
+}
+#vol:hover::-webkit-slider-thumb{
+	transform: scale(2,2);   		/* 长 宽 */
+
+}
+#info{
+	top:240px;
+	left: 90px;
+	text-align: center;
+	/* font-family: '楷体'; */
+	position: absolute;
+
+}
+#info a:hover{
+	color: #26c5c8;
+}
+#info a:link,#info a:visited{
+	color: white;
+	text-decoration: none;
+}
+#info p{
+	margin: 0px;
+}
+.name{
+	font-size: 18px;
+}
+#geci{
+	height: 100px;
+	width:100% ;
+	background: rgba(255, 255, 255, 0.3);	
+	text-align: center;
+	box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.3) inset;  /* 内阴影 */
+	overflow-y: scroll;
+	position: absolute;
+	top: 300px;
+	font: 12px;
+	transition: all 0.3s ease-in-out; 
+	/* opacity: 0.3px; */
+}
+/* 不显示滚动条 */
+#geci::-webkit-scrollbar{
+	display: none;
+	opacity: 0;  /* 透明度为零 */
+	visibility: hidden;  /* 隐藏 */
+}
+#geci:hover{
+	background: rgba(255, 255, 255, 0.8);
+	
+	/* opacity: 0.8px; */
+
+}
+.togeci{
+	color: white;
+	text-shadow: 1px 1px 3px black;
+	height:20px ;
+	width: 20px;
+	position: absolute;
+	top: 276px;
+	left: 50%;
+	cursor: pointer
+	
+}
+.togeci:hover{
+	color: #26c5c8;
+}
+.cover{
+	width: 100%;
+	height: 80%;
+	/* border: 1px solid red; */
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#button1:checked ~ .cover{
+	top: -120px;
+	
+}
+#button1:checked ~ .cover .geci{
+	top: 285px;
+}
+/* 复选框定位到很远 */
+#button1{
+	position: absolute;
+	left: -999px;
+	top: -888px;
+}

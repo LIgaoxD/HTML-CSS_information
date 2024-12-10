@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body{
+				background: black;
+			}
+			.box{
+				width: 500px;
+				height: 500px;
+				border: 1px /* solid red */;
+				margin: 100px auto;
+				
+			}
+			p{
+				color: cyan;
+				font: bold 26px 楷体;
+				text-align: center;
+				animation: move2 6s ease infinite;
+			}
+			/* 创建动画 */
+			@keyframes move2{
+				0%{
+					transform: rotate(-15deg);
+					color: aqua;
+				}
+				25%{
+					transform: rotate(15deg);
+					color: blueviolet;
+				}
+				50%{
+					transform: rotate(-15deg);
+					color: coral;
+				}
+				75%{
+					transform: rotate(15deg);
+					color: cyan;
+				}
+				100%{
+					transform: rotate(-15deg);
+					color: darkturquoise;
+				}
+			}
+			
+				
+			img{
+				width: 120px;
+				height: 136px;
+				animation: move1 12s ease-in-out infinite/* 无限次 */;  /* 名称 时间 缓解效果 次数 */
+			}
+			/* 创建动画 */
+			@keyframes move1{
+				0%{
+					
+				}
+				25%{
+					
+					transform: translate(350px,0) scale(1.5,1.2);/* 平移 x,y的偏移量 缩放 宽 高*/
+				}
+				50%{
+					
+					transform: translate(350px,350px);
+			
+				}
+				75%{
+					
+					transform: translate(0px,350px) scale(1.2,1.5);
+				}
+				100%{
+				
+					transform: translate(0,0);
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box">
+		<img src="china.png" alt="">	
+		<p>自为胜天，呜呜呜</p>
+		
+		</div>
+	</body>
+</html>

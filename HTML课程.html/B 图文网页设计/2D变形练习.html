@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style>
+		.test{
+			margin-bottom: 24px;
+			padding-bottom: 24px;
+		}
+		.test ul{
+			list-style: none;
+			
+		}
+		.test li{
+			float: left;
+			width: 100px;
+			background: #ccc;
+			margin-left: 3px;
+			line-height: 30px;
+			
+		}
+		.test a{
+			display: block;
+			text-align: center;
+			height: 30px;
+			
+		}
+		.test a:link{
+			color: #666;
+			background: url('images/icon1.jpg') #ccc no-repeat 5px 12px;
+			text-decoration: none;
+		}
+		.test a:visited{
+			color: #666;
+			text-decoration: underline;
+		}
+		.test a:hover{
+		color: #fff;
+		font-weight: bold;
+		text-decoration: none;
+		background: url('images/icon2.jpg') #F00 no-repeat 5px 12px;
+	
+		}
+		#rotate li{
+			transition: transform 0.5 ease;
+			-webkit-transition: transform 0.5 ease;
+		}
+		#rotate li:hover{
+		transform: rotate(45deg);
+			transition: 1s linear;
+			-webkit-transform: rotate(45deg);
+		}
+		#scale li{
+			transition: transform 0.5 ease;
+			-webkit-transition: transform 0.5 ease;
+		}
+		#scale li:hover{
+		transform: scale(1.2,0.8);
+			transition: transform 1s ease;
+			-webkit-transform: scale(1.2,0.8);
+		}
+		#translate li:hover{
+		transform: translate(-20px,20px);
+			transition: 1s ease-in-out;
+		}
+		#skew li:hover{
+		transform: skew(45deg,0);
+			transition: 1s ease-in-out;
+		}
+		#rotate2 li:hover{
+		transform: rotate(45deg);
+			transition: 1s linear;
+			transform-origin: left top;
+			-webkit-transform: rotate(45deg);
+		}
+		
+	</style>
+	<body>
+		<div class="test" id="rotate">
+			<ul>
+				<li><a href="">首页</a></li>
+				<li><a href="">新闻</a></li>
+				<li><a href="">论坛</a></li>
+				<li><a href="">博客</a></li>
+				<li><a href="">团购</a></li>
+				<li><a href="">微博</a></li>
+			</ul>
+		</div>
+		<div class="test" id="scale">
+			<ul>
+				<li><a href="">首页</a></li>
+				<li><a href="">新闻</a></li>
+				<li><a href="">论坛</a></li>
+				<li><a href="">博客</a></li>
+				<li><a href="">团购</a></li>
+				<li><a href="">微博</a></li>
+			</ul>
+		</div>
+		<div class="test" id="translate">
+			<ul>
+				<li><a href="">首页</a></li>
+				<li><a href="">新闻</a></li>
+				<li><a href="">论坛</a></li>
+				<li><a href="">博客</a></li>
+				<li><a href="">团购</a></li>
+				<li><a href="">微博</a></li>
+			</ul>
+		</div>
+		<div class="test" id="skew">
+			<ul>
+				<li><a href="">首页</a></li>
+				<li><a href="">新闻</a></li>
+				<li><a href="">论坛</a></li>
+				<li><a href="">博客</a></li>
+				<li><a href="">团购</a></li>
+				<li><a href="">微博</a></li>
+			</ul>
+		</div>
+		<div class="test" id="rotate2">
+			<ul>
+				<li><a href="">首页</a></li>
+				<li><a href="">新闻</a></li>
+				<li><a href="">论坛</a></li>
+				<li><a href="">博客</a></li>
+				<li><a href="">团购</a></li>
+				<li><a href="">微博</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

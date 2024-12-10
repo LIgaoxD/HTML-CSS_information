@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#div1{
+				width: 250px;
+				height: 350px;
+				background-image: url("img/0.png");
+				background-size: 100% 100%;
+				margin: 100px auto;
+				/* 调用动画 */
+				animation: amooo 5s linear; 
+			}
+			/* 调用 */
+			@keyframes amooo {
+				0%{}
+				25%{
+					background-image: url("img/1.png");
+					transform: scale(1.2,1.2);
+				}
+				50%{
+					background-image: url("img/2.png");
+					transform: scale(0.6,0.6);
+				}	
+				75%{
+					background-image: url("img/3.png");
+					transform: scale(1.5,1.5);
+				}
+				100%{
+					background-image: url("img/0.png");
+					transform: scale(1,1);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1"></div>
+			
+		
+	</body>
+</html>
