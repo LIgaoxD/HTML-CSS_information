@@ -1,6 +1,6 @@
 # HTML_CSS_information
 
-# 前端的学习路程（html、css、js）📌
+# 前端的学习路程（html、css、html5）📌
 
 #### 1、HTML文档里面包含了html、css、html5的内容(以ppt、pdf形式)（叶品菊老师的授课,也很感谢!）。
 
